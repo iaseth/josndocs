@@ -1,11 +1,15 @@
+import routesJson from './routes.json';
 
 
 
+export interface Route {
+	route: string,
+	title: string,
+}
+
+export const routes: Route[] = routesJson.routes;
 export async function generateStaticParams () {
-	return [
-		{docpage: "installation"},
-		{docpage: "tutorial"},
-	];
+	return routes.map(r => ({docpage: r.route}));
 }
 
 interface DocsPageParams {

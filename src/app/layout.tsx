@@ -1,7 +1,5 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import { routes } from './[docpage]/page';
 
 export const metadata = {
 	title: 'JOSN Docs',
@@ -16,7 +14,15 @@ export default function RootLayout ({
 	return (
 		<html lang="en">
 			<body className="flex">
-				<nav className="max-w-xs bg-red-200">Navbar</nav>
+				<nav className="w-1/4 max-w-xs bg-slate-300">
+					<section>
+						<ul className="py-4 px-3 space-y-1">
+							{routes.map((route, k) => <li key={k}>
+								<a href="" className="font-bold">{route.title}</a>
+							</li>)}
+						</ul>
+					</section>
+				</nav>
 				<main className="grow">{children}</main>
 			</body>
 		</html>
