@@ -16,6 +16,7 @@
 		{"route": "others", "title": "Others"},
 
 		{"route": "camels-and-snakes", "title": "Camels and Snakes"},
-		{"route": "javascript-and-python", "title": "JavaScript and Python"}
+		{"route": "javascript-and-python", "title": "JavaScript and Python"},
+		{"route": "future", "title": "Future"}
 	]
 }
