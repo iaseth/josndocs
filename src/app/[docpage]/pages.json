@@ -1,20 +1,25 @@
 {
-	"routes": [
+	"pages": [
+		{"title": "Basics"},
 		{"route": "installation", "title": "Installation"},
-		{"route": "tutorial", "title": "Tutorial"},
-		{"route": "overview", "title": "Overview"},
+		{"route": "getting-started", "title": "Getting Started"},
+		{"route": "core-concepts", "title": "Core Concepts"},
 
+		{"title": "Common Methods"},
 		{"route": "select-and-drop", "title": "Select and Drop"},
 		{"route": "flat-and-group", "title": "Flat and Group"},
+		{"route": "keep-and-remove", "title": "Keep and Remove"},
 		{"route": "map", "title": "Map"},
 		{"route": "order", "title": "Order"},
 
+		{"title": "Special Methods"},
 		{"route": "arrays", "title": "Arrays"},
 		{"route": "objects", "title": "Objects"},
 		{"route": "numbers", "title": "Numbers"},
 		{"route": "strings", "title": "Strings"},
 		{"route": "others", "title": "Others"},
 
+		{"title": "Exports"},
 		{"route": "camels-and-snakes", "title": "Camels and Snakes"},
 		{"route": "javascript-and-python", "title": "JavaScript and Python"},
 		{"route": "future", "title": "Future"}

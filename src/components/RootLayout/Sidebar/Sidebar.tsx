@@ -1,8 +1,17 @@
 import Link from 'next/link';
 
-import { routes } from '../../../app/[docpage]/page';
+import { pages } from '../../../app/[docpage]/page';
 
 
+
+function Entry ({k}: {k: number}) {
+	const page = pages[k];
+	if (page.route) {
+		return <Link href={page.route} className="block text-blue-700">{page.title}</Link>;
+	} else {
+		return <h4 className="pt-4">{page.title}</h4>;
+	}
+}
 
 export default function Sidebar () {
 	return (
@@ -14,12 +23,9 @@ export default function Sidebar () {
 				<h4>Playing with JSON</h4>
 			</header>
 
-			<main>
-				<section className="py-6 px-3">
-					{routes.map((route, k) => <h4 key={k} className="grid grid-cols-6 space-x-2 py-1">
-						<span className="text-right">{k+1}.</span>
-						<Link href={route.route} className="col-span-5 text-blue-700">{route.title}</Link>
-					</h4>)}
+			<main className="">
+				<section className="px-4 pt-2 pb-6 h4 space-y-2">
+					{pages.map((page, k) => <Entry key={k} k={k} />)}
 				</section>
 			</main>
 		</nav>
