@@ -1,10 +1,12 @@
 import Link from 'next/link';
 
-import { PageRoute, pages } from '../../../app/[docpage]/page';
+import pagesJson from '../../../app/[docpage]/pages.json';
+import { PageRoute } from '../../../app/[docpage]/page';
+
 import PageLink from './PageLink';
 import SectionHeader from './SectionHeader';
 
-
+export const pages: PageRoute[] = pagesJson.pages;
 
 function Entry ({page}: {page: PageRoute}) {
 	return page.route ? <PageLink page={page} /> : <SectionHeader page={page} />;

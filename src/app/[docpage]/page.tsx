@@ -7,7 +7,7 @@ export interface PageRoute {
 	title: string,
 }
 
-export const pages: PageRoute[] = pagesJson.pages;
+const pages: PageRoute[] = pagesJson.pages;
 export async function generateStaticParams () {
 	return pages.filter(page => page.route).map(page => ({docpage: page.route}));
 }
