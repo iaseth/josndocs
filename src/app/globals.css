@@ -21,6 +21,10 @@ h6, .h6, .p6 { @apply text-xs; }
 .H5, .P5 { @apply text-4xl; }
 .H6, .P6 { @apply text-3xl; }
 
+.header-link {
+	@apply block px-4 py-2 bg-red-700 text-white text-sm font-bold rounded-b;
+}
+
 .big-button {
 	@apply block px-4 py-5 bg-red-700 text-white font-bold border-2 border-red-800 rounded shadow;
 }

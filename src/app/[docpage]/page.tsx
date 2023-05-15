@@ -1,3 +1,4 @@
+import Header from '@/components/Header/Header';
 import pagesJson from './pages.json';
 
 
@@ -27,7 +28,8 @@ export default function DocsPage ({params}: DocsPageProps) {
 
 	return (
 		<main className="min-h-screen">
-			<header className="bg-red-500 text-white px-4 py-8">
+			<header className="relative bg-red-500 text-white px-4 py-8 pt-16">
+				<Header />
 				<h1>{page.title}</h1>
 				<h4>{page.description || "This page has no description."}</h4>
 			</header>

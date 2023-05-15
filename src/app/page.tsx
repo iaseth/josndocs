@@ -1,3 +1,5 @@
+import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/Header';
 import Link from 'next/link';
 
 
@@ -6,7 +8,7 @@ export default function Home () {
 	return (
 		<main className="min-h-screen text-center">
 			<header className="bg-red-500 text-white py-6">
-				<header></header>
+				<Header />
 				<main className="px-8 py-16 space-y-6">
 					<h1 className="H4">Josn</h1>
 					<h4>Josn is a command line JSON viewer.</h4>
@@ -19,6 +21,8 @@ export default function Home () {
 					</section>
 				</footer>
 			</header>
+
+			<Footer />
 		</main>
 	);
 }
