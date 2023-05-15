@@ -1,4 +1,12 @@
+import { Source_Sans_Pro } from 'next/font/google';
+
 import './globals.css';
+
+const source_Sans_Pro = Source_Sans_Pro({
+	weight: ['400', '700'],
+	subsets: ['latin'],
+	display: 'swap',
+});
 
 export const metadata = {
 	title: 'JOSN Docs',
@@ -12,7 +20,7 @@ export default function RootLayout ({
 }) {
 	return (
 		<html lang="en">
-			<body className="">{children}</body>
+			<body className={source_Sans_Pro.className}>{children}</body>
 		</html>
 	);
 }

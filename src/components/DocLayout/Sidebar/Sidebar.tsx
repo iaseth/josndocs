@@ -14,7 +14,7 @@ function Entry ({page}: {page: PageRoute}) {
 
 export default function Sidebar () {
 	return (
-		<nav className="w-1/4 max-w-xs bg-slate-100 border-r border-red-600 sans-serif overflow-y-scroll">
+		<nav className="absolute w-4/5 z-50 md:static md:w-1/4 max-w-xs bg-slate-100 border-r border-red-600 sans-serif overflow-y-scroll">
 			<header className="bg-red-600 text-white text-center px-2 py-5">
 				<h1 className="py-3">
 					<Link href="/">Josn</Link>
