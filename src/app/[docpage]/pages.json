@@ -19,9 +19,19 @@
 		{"route": "strings", "title": "Strings"},
 		{"route": "others", "title": "Others"},
 
-		{"title": "Exports"},
+		{"title": "Other Topics"},
+		{"route": "bad-apples", "title": "Bad Apples"},
 		{"route": "camels-and-snakes", "title": "Camels and Snakes"},
 		{"route": "javascript-and-python", "title": "JavaScript and Python"},
-		{"route": "future", "title": "Future"}
+
+		{"title": "Other Formats"},
+		{"route": "josn-and-csv", "title": "Josn and CSV"},
+		{"route": "josn-and-html", "title": "Josn and HTML"},
+		{"route": "josn-and-markdown", "title": "Josn and Markdown"},
+		{"route": "josn-and-xml", "title": "Josn and XML"},
+
+		{"title": "Meta"},
+		{"route": "about-josn", "title": "About JOSN"},
+		{"route": "acknowledgements", "title": "Acknowledgements"}
 	]
 }
